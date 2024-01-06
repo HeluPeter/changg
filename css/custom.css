@@ -1,2 +1,31 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+.effect-sparkle {
+  background-image: url(../images/sparkle1.png),url(../images/sparkle2.png);
+  -webkit-animation: sparkle 60s linear infinite;
+  animation: sparkle 60s linear infinite;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@keyframes sparkle {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: -500px -1000px, -400px -400px, 300px 300px;
+  }
+}
